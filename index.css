@@ -1,0 +1,158 @@
+body {
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+.navbar {
+    background-color: #f7a800;
+    height: 10vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+    color: #fff;
+}
+
+.navbar-menu {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.navbar a {
+    color: white;
+    text-decoration: none;
+    margin: 0 10px;
+    font-size: 14px;
+}
+
+.brand-link {
+    font-size: 16px; 
+    font-weight: bold;
+    margin-right: 15px;
+}
+
+.order-online-btn {
+    background-color: #ff5050;
+    color: white;
+    padding: 8px 15px;
+    border-radius: 20px;
+    font-weight: bold;
+}
+
+.main-content {
+    background-color: #ff5050;
+    min-height: calc(100vh - 10vh);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px 0;
+}
+
+.content-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 90%; 
+    max-width: 1400px; 
+    height: 70vh; 
+    border: 2px solid white;
+    border-radius: 20px; 
+    padding: 40px; 
+    background-color: #ff7050; 
+    box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.2); 
+}
+
+
+.pizza-info {
+    max-width: 50%; 
+    color: white;
+    text-align: left;
+}
+
+.pizza-info h1 {
+    font-size: 2.8rem; 
+    margin-bottom: 20px;
+}
+
+.pizza-info p {
+    font-size: 1.4rem; 
+    margin: 10px 0;
+}
+
+
+.pizza-image {
+    max-width: 45%;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.pizza-image img {
+    max-width: 100%;
+    border-radius: 15px; 
+}
+
+
+.price-tag {
+    background-color: white;
+    color: #ff5050;
+    padding: 10px 15px;
+    border-radius: 25px;
+    position: absolute;
+    top: -10px;
+    right: -10px;
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+
+.order-button {
+    background-color: #f7a800;
+    color: white;
+    border: none;
+    padding: 15px 30px;
+    border-radius: 10px;
+    cursor: pointer;
+    margin-top: 20px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.order-button:hover {
+    background-color: #d97a00;
+}
+
+
+@media (max-width: 768px) {
+    .content-wrapper {
+        flex-direction: column;
+        height: auto; 
+    }
+
+    .pizza-info, .pizza-image {
+        max-width: 100%;
+        margin-bottom: 20px;
+    }
+}
+
+.additional-button {
+    position: absolute;
+    top: 20%;
+    right: 10%;
+    background-color: white;
+    color: #d2232a;
+    font-weight: bold;
+    padding: 10px 15px;
+    border-radius: 10px;
+    text-decoration: none;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+.additional-button:hover {
+    background-color: #f7a800;
+    color: white;
+}
